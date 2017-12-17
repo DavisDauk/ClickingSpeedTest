@@ -13,6 +13,7 @@ namespace ClickCounter
     public partial class Form1 : Form {
 
         int timeLeft, totalClicks = 0;
+        bool testOn = false;
 
         public Form1()
         {
@@ -21,16 +22,17 @@ namespace ClickCounter
 
         private void button2_Click(object sender, EventArgs e)
         {
-
-            button2.Visible = false;
-            timer1.Start();
-            timeLeft = 10;
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {        
-            totalClicks++;
-            label2.Text = totalClicks + "Clicks";
+            if (testOn == false)
+            {
+                timer1.Start();
+                timeLeft = 10;
+                testOn = true;
+            }
+            else
+            {
+                totalClicks++;
+                timeLeftSec.Text = totalClicks + " :Clicks";
+            }
         }
 
         private void timer1_Tick(object sender, EventArgs e)
@@ -38,11 +40,12 @@ namespace ClickCounter
             if (timeLeft > 0)
             {
                 timeLeft = timeLeft - 1;
-                label1.Text = timeLeft + "s";
+                timeLeftTxt.Text = timeLeft + "s";
             }
             else
             {
-                button1.Enabled = false;
+                testOn = false;
+                mainBt.Enabled = false;
             }
 
            
