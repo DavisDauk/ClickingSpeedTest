@@ -7,3 +7,13 @@ C:\Users\Davis\Desktop\PcStats\ClickCounter\ClickCounter\obj\Debug\ClickCounter.
 C:\Users\Davis\Desktop\PcStats\ClickCounter\ClickCounter\obj\Debug\ClickCounter.csproj.GenerateResource.Cache
 C:\Users\Davis\Desktop\PcStats\ClickCounter\ClickCounter\obj\Debug\ClickCounter.exe
 C:\Users\Davis\Desktop\PcStats\ClickCounter\ClickCounter\obj\Debug\ClickCounter.pdb
+C:\Users\Davis\Desktop\GitHub\ClickingSpeedTest\ClickCounter\bin\Debug\ClickCounter.exe.config
+C:\Users\Davis\Desktop\GitHub\ClickingSpeedTest\ClickCounter\bin\Debug\ClickCounter.exe
+C:\Users\Davis\Desktop\GitHub\ClickingSpeedTest\ClickCounter\bin\Debug\ClickCounter.pdb
+C:\Users\Davis\Desktop\GitHub\ClickingSpeedTest\ClickCounter\obj\Debug\ClickCounter.csprojResolveAssemblyReference.cache
+C:\Users\Davis\Desktop\GitHub\ClickingSpeedTest\ClickCounter\obj\Debug\ClickCounter.Form1.resources
+C:\Users\Davis\Desktop\GitHub\ClickingSpeedTest\ClickCounter\obj\Debug\ClickCounter.Properties.Resources.resources
+C:\Users\Davis\Desktop\GitHub\ClickingSpeedTest\ClickCounter\obj\Debug\ClickCounter.csproj.GenerateResource.Cache
+C:\Users\Davis\Desktop\GitHub\ClickingSpeedTest\ClickCounter\obj\Debug\ClickCounter.csproj.CoreCompileInputs.cache
+C:\Users\Davis\Desktop\GitHub\ClickingSpeedTest\ClickCounter\obj\Debug\ClickCounter.exe
+C:\Users\Davis\Desktop\GitHub\ClickingSpeedTest\ClickCounter\obj\Debug\ClickCounter.pdb

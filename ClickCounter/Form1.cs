@@ -37,15 +37,19 @@ namespace ClickCounter
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-            if (timeLeft > 0)
+            if (timeLeft > 1)
             {
                 timeLeft = timeLeft - 1;
                 timeLeftTxt.Text = timeLeft + "s";
             }
             else
             {
+                timeLeft = timeLeft - 1;
+                timeLeftTxt.Text = timeLeft + "s";
+
                 testOn = false;
                 mainBt.Enabled = false;
+                timer1.Stop();
             }
 
            
