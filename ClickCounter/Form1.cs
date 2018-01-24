@@ -12,7 +12,7 @@ namespace ClickCounter
 {
     public partial class Form1 : Form {
 
-        int timeLeft, totalClicks = 0;
+        int timeLeft, _totalClicks = 0;
         bool testOn = false;
 
         public Form1()
@@ -27,12 +27,22 @@ namespace ClickCounter
                 timer1.Start();
                 timeLeft = 10;
                 testOn = true;
+                resetButton.Enabled = false;
             }
             else
             {
-                totalClicks++;
-                timeLeftSec.Text = totalClicks + " :Clicks";
+                _totalClicks++;
+                timeLeftSec.Text = _totalClicks + @" :Clicks";
             }
+        }
+
+        private void resetButton_Click(object sender, EventArgs e)
+        {
+            testOn = false;
+            timeLeft = 10;
+            mainBt.Enabled = true;
+            _totalClicks = 0;
+            timeLeftTxt.Text = "10s";
         }
 
         private void timer1_Tick(object sender, EventArgs e)
@@ -50,6 +60,7 @@ namespace ClickCounter
                 testOn = false;
                 mainBt.Enabled = false;
                 timer1.Stop();
+                resetButton.Enabled = true;
             }
 
            
