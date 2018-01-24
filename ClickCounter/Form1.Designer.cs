@@ -33,6 +33,7 @@
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.timeLeftTxt = new System.Windows.Forms.Label();
             this.timeLeftSec = new System.Windows.Forms.Label();
+            this.resetButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // mainBt
@@ -57,7 +58,7 @@
             this.timeLeftTxt.Name = "timeLeftTxt";
             this.timeLeftTxt.Size = new System.Drawing.Size(134, 43);
             this.timeLeftTxt.TabIndex = 2;
-            this.timeLeftTxt.Text = "Time Left";
+            this.timeLeftTxt.Text = "10s";
             // 
             // timeLeftSec
             // 
@@ -68,12 +69,26 @@
             this.timeLeftSec.TabIndex = 3;
             this.timeLeftSec.Text = "0 : Clicks";
             // 
+            // resetButton
+            // 
+            this.resetButton.Cursor = System.Windows.Forms.Cursors.Cross;
+            this.resetButton.Enabled = false;
+            this.resetButton.Location = new System.Drawing.Point(109, 299);
+            this.resetButton.Name = "resetButton";
+            this.resetButton.Size = new System.Drawing.Size(201, 49);
+            this.resetButton.TabIndex = 4;
+            this.resetButton.Text = "Reset";
+            this.resetButton.UseVisualStyleBackColor = true;
+            this.resetButton.Click += new System.EventHandler(this.resetButton_Click);
+            // 
             // Form1
             // 
-            this.ClientSize = new System.Drawing.Size(441, 360);
+            this.ClientSize = new System.Drawing.Size(413, 360);
+            this.Controls.Add(this.resetButton);
             this.Controls.Add(this.timeLeftSec);
             this.Controls.Add(this.timeLeftTxt);
             this.Controls.Add(this.mainBt);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "Form1";
             this.ResumeLayout(false);
 
@@ -84,6 +99,7 @@
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.Label timeLeftTxt;
         private System.Windows.Forms.Label timeLeftSec;
+        private System.Windows.Forms.Button resetButton;
     }
 }
 
