@@ -43,6 +43,7 @@ namespace ClickCounter
             mainBt.Enabled = true;
             _totalClicks = 0;
             timeLeftTxt.Text = "10s";
+            resetButton.Enabled = false;
         }
 
         private void timer1_Tick(object sender, EventArgs e)
