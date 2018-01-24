@@ -14,6 +14,7 @@ namespace ClickCounter
 
         int timeLeft, _totalClicks = 0;
         bool testOn = false;
+        private int Record = 0;
 
         public Form1()
         {
@@ -58,10 +59,17 @@ namespace ClickCounter
                 timeLeft = timeLeft - 1;
                 timeLeftTxt.Text = timeLeft + "s";
 
+
                 testOn = false;
                 mainBt.Enabled = false;
                 timer1.Stop();
                 resetButton.Enabled = true;
+
+                if (Record < _totalClicks)
+                {
+                    Record = _totalClicks;
+                    HScore.Text = "Record: " + Record;
+                }
             }
 
            

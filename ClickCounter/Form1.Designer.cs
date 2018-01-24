@@ -34,6 +34,7 @@
             this.timeLeftTxt = new System.Windows.Forms.Label();
             this.timeLeftSec = new System.Windows.Forms.Label();
             this.resetButton = new System.Windows.Forms.Button();
+            this.HScore = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // mainBt
@@ -63,7 +64,7 @@
             // timeLeftSec
             // 
             this.timeLeftSec.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
-            this.timeLeftSec.Location = new System.Drawing.Point(228, 48);
+            this.timeLeftSec.Location = new System.Drawing.Point(198, 48);
             this.timeLeftSec.Name = "timeLeftSec";
             this.timeLeftSec.Size = new System.Drawing.Size(160, 43);
             this.timeLeftSec.TabIndex = 3;
@@ -81,9 +82,19 @@
             this.resetButton.UseVisualStyleBackColor = true;
             this.resetButton.Click += new System.EventHandler(this.resetButton_Click);
             // 
+            // HScore
+            // 
+            this.HScore.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
+            this.HScore.Location = new System.Drawing.Point(97, 101);
+            this.HScore.Name = "HScore";
+            this.HScore.Size = new System.Drawing.Size(261, 43);
+            this.HScore.TabIndex = 5;
+            this.HScore.Text = "Record: n/a";
+            // 
             // Form1
             // 
             this.ClientSize = new System.Drawing.Size(413, 360);
+            this.Controls.Add(this.HScore);
             this.Controls.Add(this.resetButton);
             this.Controls.Add(this.timeLeftSec);
             this.Controls.Add(this.timeLeftTxt);
@@ -100,6 +111,7 @@
         private System.Windows.Forms.Label timeLeftTxt;
         private System.Windows.Forms.Label timeLeftSec;
         private System.Windows.Forms.Button resetButton;
+        private System.Windows.Forms.Label HScore;
     }
 }
 
