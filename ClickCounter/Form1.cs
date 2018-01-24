@@ -23,6 +23,8 @@ namespace ClickCounter
 
         private void button2_Click(object sender, EventArgs e)
         {
+            
+
             if (testOn == false)
             {
                 timer1.Start();
@@ -32,8 +34,10 @@ namespace ClickCounter
             }
             else
             {
-                _totalClicks++;
-                timeLeftSec.Text = _totalClicks + @" :Clicks";
+               
+                    _totalClicks++;
+                    timeLeftSec.Text = _totalClicks + @" :Clicks";
+                
             }
         }
 
@@ -45,6 +49,7 @@ namespace ClickCounter
             _totalClicks = 0;
             timeLeftTxt.Text = "10s";
             resetButton.Enabled = false;
+            timeLeftSec.Text = "0 :Clicks";
         }
 
         private void timer1_Tick(object sender, EventArgs e)
@@ -70,6 +75,8 @@ namespace ClickCounter
                     Record = _totalClicks;
                     HScore.Text = "Record: " + Record;
                 }
+
+                
             }
 
            
